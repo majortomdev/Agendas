@@ -25,11 +25,10 @@ public class UserController {
 	public List<User> getUsers(){
 		return userRepository.findAll();
 	}
-//	@GetMapping("/user/{id}")
-//	public User getUser(@PathVariable Long id){
-//		//return userRepository.findOne(id);
-//		return userRepository.findById(id);
-//	}
+	@GetMapping("/user/{id}")
+	public User getUser(@PathVariable Long id){ 
+		return userRepository.findById(id).get();
+	}
 	@DeleteMapping("/user/{id}")
 	public boolean deleteUser(@PathVariable Long id){
 		//userRepository.delete(id);
