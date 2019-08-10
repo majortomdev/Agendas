@@ -4,6 +4,8 @@ target/
 !**/src/main/**
 !**/src/test/**
 
+myBig_db.mv.db
+
 ### STS ###
 .apt_generated
 .classpath
