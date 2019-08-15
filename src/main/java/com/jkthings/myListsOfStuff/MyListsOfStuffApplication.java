@@ -20,9 +20,9 @@ public class MyListsOfStuffApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		userRepository.save(new User("one","one"));
-		userRepository.save(new User("two","two"));
-		userRepository.save(new User("three","three"));
+		userRepository.save(new User("Bob","Hope"));
+		userRepository.save(new User("Vic","Reeves"));
+		userRepository.save(new User("Des","Bishop"));
 		
 	}
 
